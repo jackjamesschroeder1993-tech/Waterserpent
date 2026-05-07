@@ -55,10 +55,11 @@
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "Hydro Jet Drain Cleaning"}},
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "Blocked Toilet Repair"}},
       {"@type": "Offer","itemOffered": {"@type": "Service","name": "Stormwater Drain Cleaning"}},
-      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Emergency Plumbing"}}
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Emergency Plumbing"}},
+      {"@type": "Offer","itemOffered": {"@type": "Service","name": "Pipe Relining"}}
     ]
   },
-  "sameAs": ["https://www.instagram.com/water_serpent_plumbing/"]
+  "sameAs": ["https://www.instagram.com/water_serpent_plumbing/", "https://www.youtube.com/@waterserpentdrains"]
 }
 </script>
 
@@ -1159,6 +1160,7 @@
         <span onclick="showPage('service-blocked-sinks')">Blocked Sinks</span>
         <span onclick="showPage('service-stormwater')">Stormwater Drains</span>
         <span onclick="showPage('service-emergency')">Emergency Plumbing</span>
+        <span onclick="showPage('service-pipe-relining')">Pipe Relining</span>
       </div>
     </li>
     <li class="dropdown">
@@ -1178,6 +1180,7 @@
       </div>
     </li>
     <li><span onclick="showPage('blog')">Blog</span></li>
+    <li><span onclick="showPage('reviews')">Reviews</span></li>
     <li><span onclick="showPage('contact')">Contact</span></li>
     <li><span onclick="showPage('about')">About</span></li>
     <li><a href="tel:0425226636" class="btn-call-nav">📞 0425 226 636</a></li>
@@ -1223,6 +1226,21 @@
   <!-- EMERGENCY STRIP -->
   <div class="emergency-strip">
     <p>🚨 BLOCKED DRAIN EMERGENCY? DON'T WAIT — <a href="tel:0425226636">CALL NOW: 0425 226 636</a> — SAME-DAY GUARANTEED</p>
+  </div>
+
+
+  <!-- YOUTUBE STRIP -->
+  <div style="background:var(--card-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:22px 24px;">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div style="display:flex;align-items:center;gap:16px;">
+        <div style="background:#ff0000;border-radius:8px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">▶</div>
+        <div>
+          <div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--text);">Want to see exactly what we do before you call?</div>
+          <div style="color:var(--text-muted);font-size:0.9rem;">Watch real drain jobs, CCTV footage and before &amp; afters on our YouTube — full transparency, zero surprises. <strong style="color:var(--text)">@waterserpentdrains</strong></div>
+        </div>
+      </div>
+      <a href="https://www.youtube.com/@waterserpentdrains" target="_blank" class="btn-primary" style="white-space:nowrap;background:#ff0000;flex-shrink:0;">▶ Watch on YouTube</a>
+    </div>
   </div>
 
   <!-- STATS -->
@@ -1292,6 +1310,12 @@
           <span class="service-icon">🌧️</span>
           <h3>Stormwater Drains</h3>
           <p>Prevent flooding and property damage. We clear, inspect and restore stormwater drainage systems for residential and commercial properties.</p>
+          <span class="learn-more">Learn More →</span>
+        </div>
+        <div class="service-card" onclick="showPage('service-pipe-relining')">
+          <span class="service-icon">🔩</span>
+          <h3>Pipe Relining</h3>
+          <p>Cracked or root-damaged pipes fixed permanently with no digging. Our no-dig pipe relining solution comes with a long-term warranty and is completed in one day.</p>
           <span class="learn-more">Learn More →</span>
         </div>
         <div class="service-card" onclick="showPage('service-emergency')">
@@ -1503,6 +1527,11 @@
     </div>
   </section>
 
+  <!-- SEE ALL REVIEWS BUTTON -->
+  <div style="text-align:center;padding:0 24px 40px;">
+    <span class="btn-secondary" onclick="showPage('reviews')">⭐ Read All Customer Reviews →</span>
+  </div>
+
   <!-- BLOG PREVIEW -->
   <section>
     <div class="container">
@@ -1597,6 +1626,13 @@
         <li>Full diagnostic tools for accurate assessment every time</li>
       </ul>
       <h3>Our Service Area</h3>
+      <div style="background:var(--card-bg);border:1px solid var(--border);border-left:4px solid #ff0000;border-radius:0 8px 8px 0;padding:20px 24px;margin-bottom:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span style="font-size:1.8rem;flex-shrink:0;">▶</span>
+        <div style="flex:1;">
+          <strong style="color:var(--text);display:block;margin-bottom:4px;">See us in action on YouTube</strong>
+          <span style="color:var(--text-muted);font-size:0.9rem;">Watch real jobs, CCTV footage and drain clears at </span><a href="https://www.youtube.com/@waterserpentdrains" target="_blank" style="color:#ff0000;font-weight:700;text-decoration:none;">youtube.com/@waterserpentdrains</a>
+        </div>
+      </div>
       <p style="color:var(--text-muted);line-height:1.85;margin-bottom:20px;">Based in Kalorama, we service Melbourne's South East including Ringwood, Bayswater, Ferntree Gully, Glen Waverley, Lilydale, Croydon, Boronia, Wantirna and surrounding suburbs. If you're unsure whether we cover your area, just call — we likely do.</p>
     </div>
     <div class="sidebar">
@@ -2269,6 +2305,15 @@
       <p>If your home has old earthenware pipes and mature trees nearby, it's not a matter of <em>if</em> you'll get a tree root blockage — it's <em>when</em>. Preventative CCTV inspections every few years can catch root intrusion before it becomes an emergency.</p>
       <h3>Need Help With Tree Root Blockages in Melbourne's South East?</h3>
       <p>Call Jack at Water Serpent Plumbing on <a href="tel:0425226636" style="color:var(--gold)">0425 226 636</a> for a same-day blocked drain inspection. We cover Ringwood, Bayswater, Ferntree Gully, Lilydale, Croydon, Kilsyth, Boronia and all surrounding South East suburbs.</p>
+
+      <div style="background:var(--card-bg);border:1px solid var(--border);border-left:4px solid #ff0000;border-radius:0 8px 8px 0;padding:20px 24px;margin-top:32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span style="font-size:1.8rem;flex-shrink:0;">▶</span>
+        <div style="flex:1;min-width:180px;">
+          <strong style="color:var(--text);display:block;margin-bottom:4px;">Want to see this in action?</strong>
+          <span style="color:var(--text-muted);font-size:0.9rem;">Watch real drain jobs and CCTV footage on our YouTube channel before you call.</span>
+        </div>
+        <a href="https://www.youtube.com/@waterserpentdrains" target="_blank" style="background:#ff0000;color:white;text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.05em;padding:10px 18px;border-radius:4px;white-space:nowrap;flex-shrink:0;">▶ Watch on YouTube</a>
+      </div>
     </div>
     <div class="sidebar">
       <div class="sidebar-box">
@@ -2565,6 +2610,7 @@
       <p>Melbourne's South East blocked drain specialists. 20+ years experience. 5000 PSI hydro jetting, CCTV inspections and honest upfront pricing. Jack attends every job personally.</p>
       <div class="social-links">
         <a href="https://www.instagram.com/water_serpent_plumbing/" target="_blank" class="social-link" title="Instagram">📷</a>
+        <a href="https://www.youtube.com/@waterserpentdrains" target="_blank" class="social-link" title="YouTube">▶</a>
         <a href="tel:0425226636" class="social-link" title="Call Us">📞</a>
         <a href="mailto:waterserpentworks@gmail.com" class="social-link" title="Email">✉</a>
       </div>
@@ -2600,6 +2646,9 @@
       <ul>
         <li><a href="tel:0425226636">📞 0425 226 636</a></li>
         <li><a href="mailto:waterserpentworks@gmail.com">✉ Email Us</a></li>
+        <li><a href="https://www.youtube.com/@waterserpentdrains" target="_blank" style="color:#ff0000;">▶ YouTube</a></li>
+        <li><a href="https://www.instagram.com/water_serpent_plumbing/" target="_blank">📷 Instagram</a></li>
+        <li><span onclick="showPage('reviews')" style="cursor:pointer;color:var(--gold)">⭐ Reviews</span></li>
         <li><span onclick="showPage('contact')" style="cursor:pointer;color:var(--gold)">📩 Contact Form</span></li>
         <li><span>📍 South East Melbourne</span></li>
         <li><span>🕐 24/7 Emergency</span></li>
@@ -2776,8 +2825,332 @@
             </div>
           </div>
 
+          <div class="contact-info-card">
+            <span class="ci-icon">▶</span>
+            <div>
+              <h4>YouTube</h4>
+              <a href="https://www.youtube.com/@waterserpentdrains" target="_blank" style="color:var(--text);font-weight:700;font-size:1rem;text-decoration:none;">@waterserpentdrains</a>
+              <p>Watch real drain jobs, live CCTV footage and before &amp; after clears. See exactly what we do before you call — full confidence guaranteed.</p>
+            </div>
+          </div>
+
         </div>
       </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- PIPE RELINING SERVICE PAGE -->
+<div id="page-service-pipe-relining" class="page">
+  <div class="inner-hero">
+    <span class="eyebrow">Services</span>
+    <h1>Pipe Relining <span class="gold">Melbourne South East</span></h1>
+    <p>Cracked, broken or root-damaged pipes? Pipe relining fixes the problem permanently — no digging, no destruction, no mess. Melbourne's South East specialists. Call Jack: 0425 226 636.</p>
+    <div class="inner-ctas">
+      <a href="tel:0425226636" class="btn-primary">📞 Call 0425 226 636</a>
+      <span class="btn-secondary" onclick="showPage('service-cctv')">CCTV Inspection First →</span>
+    </div>
+  </div>
+
+  <div class="two-col-content">
+    <div class="main-content">
+      <div class="breadcrumb"><a onclick="showPage('home')">Home</a><span class="sep">›</span><a onclick="showPage('home')">Services</a><span class="sep">›</span><span>Pipe Relining</span></div>
+
+      <h2>What Is <span class="gold">Pipe Relining?</span></h2>
+      <p style="color:var(--text-muted);line-height:1.85;margin-bottom:16px;">Pipe relining is a modern, no-dig method of permanently repairing damaged, cracked or root-infiltrated drain pipes from the inside — without excavating your garden, driveway or flooring. A flexible resin liner is inserted into the damaged pipe, inflated to fit perfectly against the pipe walls, and cured to form a brand new pipe within the old one.</p>
+      <p style="color:var(--text-muted);line-height:1.85;margin-bottom:24px;">The result is a seamless, jointless pipe that is actually stronger than the original — and comes with a long-term product warranty. It is the permanent solution to recurring drain problems caused by ageing or damaged pipes.</p>
+
+      <!-- What it fixes -->
+      <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:28px;margin-bottom:28px;">
+        <h3 style="margin-bottom:16px;">What Pipe Relining <span class="gold">Fixes Permanently</span></h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div class="why-feature"><span class="why-feature-icon">🌳</span><div><h4>Tree Root Intrusion</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">Seals pipe joints permanently so roots can never re-enter</p></div></div>
+          <div class="why-feature"><span class="why-feature-icon">🔩</span><div><h4>Cracked Pipes</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">Cures over cracks and fractures, restoring full structural integrity</p></div></div>
+          <div class="why-feature"><span class="why-feature-icon">💧</span><div><h4>Leaking Joints</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">Creates a seamless, jointless interior — no more leak points</p></div></div>
+          <div class="why-feature"><span class="why-feature-icon">🏚️</span><div><h4>Collapsed Sections</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">Partially collapsed pipe sections can be relined and restored</p></div></div>
+          <div class="why-feature"><span class="why-feature-icon">🔄</span><div><h4>Recurring Blockages</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">Eliminates the root cause of blockages that keep coming back</p></div></div>
+          <div class="why-feature"><span class="why-feature-icon">🧱</span><div><h4>Ageing Clay Pipes</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">Breathes new life into old earthenware pipes without replacement</p></div></div>
+        </div>
+      </div>
+
+      <h3>Pipe Relining vs Pipe Replacement — Which Is Right?</h3>
+      <p style="color:var(--text-muted);line-height:1.85;margin-bottom:16px;">Traditional pipe replacement involves digging up the old pipe — destroying gardens, driveways, concrete paths and sometimes interior flooring in the process. Reinstatement of those surfaces often costs more than the plumbing work itself.</p>
+
+      <!-- Comparison table -->
+      <div style="overflow-x:auto;margin-bottom:28px;">
+        <table style="width:100%;border-collapse:collapse;font-size:0.95rem;">
+          <thead>
+            <tr style="background:var(--green);color:var(--white);">
+              <th style="padding:12px 16px;text-align:left;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.05em;">Feature</th>
+              <th style="padding:12px 16px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--gold);">Pipe Relining ✅</th>
+              <th style="padding:12px 16px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:0.05em;">Pipe Replacement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:12px 16px;color:var(--text);font-weight:600;">Excavation required</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--gold);font-weight:700;">No digging ✅</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--text-muted);">Extensive digging</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);background:rgba(0,0,0,0.1);">
+              <td style="padding:12px 16px;color:var(--text);font-weight:600;">Garden / driveway damage</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--gold);font-weight:700;">None ✅</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--text-muted);">Significant damage</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:12px 16px;color:var(--text);font-weight:600;">Completion time</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--gold);font-weight:700;">1 day ✅</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--text-muted);">3–5+ days</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);background:rgba(0,0,0,0.1);">
+              <td style="padding:12px 16px;color:var(--text);font-weight:600;">Reinstatement costs</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--gold);font-weight:700;">None ✅</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--text-muted);">Often $2,000–$10,000+</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);">
+              <td style="padding:12px 16px;color:var(--text);font-weight:600;">Pipe strength after</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--gold);font-weight:700;">Stronger than original ✅</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--text-muted);">As original</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border);background:rgba(0,0,0,0.1);">
+              <td style="padding:12px 16px;color:var(--text);font-weight:600;">Warranty</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--gold);font-weight:700;">Long-term ✅</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--text-muted);">Varies</td>
+            </tr>
+            <tr>
+              <td style="padding:12px 16px;color:var(--text);font-weight:600;">Root re-entry possible</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--gold);font-weight:700;">No — fully sealed ✅</td>
+              <td style="padding:12px 16px;text-align:center;color:var(--text-muted);">Yes, at joints</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>The Pipe Relining Process — Step by Step</h3>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:28px;">
+        <div class="why-feature"><span class="why-feature-icon" style="background:var(--green);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:900;flex-shrink:0;">1</span><div><h4>CCTV Drain Inspection</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">We camera inspect the full drain line to map the damage, measure pipe diameter and length, and confirm relining is the right solution.</p></div></div>
+        <div class="why-feature"><span class="why-feature-icon" style="background:var(--green);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:900;flex-shrink:0;">2</span><div><h4>Hydro Jet Preparation</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">The pipe is thoroughly cleaned with our 5000 PSI hydro jetter — removing all root material, scale and debris so the liner bonds perfectly.</p></div></div>
+        <div class="why-feature"><span class="why-feature-icon" style="background:var(--green);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:900;flex-shrink:0;">3</span><div><h4>Liner Insertion</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">A resin-saturated felt liner is inserted into the pipe and inflated using an inversion drum or pull-in-place system, pressing the liner firmly against the pipe walls.</p></div></div>
+        <div class="why-feature"><span class="why-feature-icon" style="background:var(--green);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:white;font-family:'Barlow Condensed',sans-serif;font-weight:900;flex-shrink:0;">4</span><div><h4>Curing</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">The resin cures and hardens — forming a rigid, seamless new pipe within the old one. Curing time varies by method, typically 1–4 hours.</p></div></div>
+        <div class="why-feature"><span class="why-feature-icon" style="background:var(--gold);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--darker);font-family:'Barlow Condensed',sans-serif;font-weight:900;flex-shrink:0;">5</span><div><h4>Final CCTV Inspection</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">We camera inspect again to confirm the liner has cured correctly and the pipe is fully restored. You see the result on camera before we pack up.</p></div></div>
+      </div>
+
+      <h3>How Much Does Pipe Relining Cost in Melbourne?</h3>
+      <p style="color:var(--text-muted);line-height:1.85;margin-bottom:12px;">Pipe relining costs in Melbourne's South East typically range from <strong style="color:var(--text)">$500–$1,500 per metre</strong> depending on pipe diameter, depth, access difficulty and the extent of damage. A standard residential job — say, a 6-metre sewer line — typically costs <strong style="color:var(--text)">$3,000–$8,000 all inclusive</strong>.</p>
+      <p style="color:var(--text-muted);line-height:1.85;margin-bottom:24px;">Compare that to traditional pipe replacement where excavation, pipe replacement AND reinstatement of your garden or driveway can easily reach $15,000–$25,000 for the same section. In most cases pipe relining is significantly cheaper — and faster.</p>
+
+      <div style="background:var(--card-bg);border-left:4px solid var(--gold);border-radius:0 8px 8px 0;padding:24px;margin-bottom:28px;">
+        <h4 style="margin-bottom:8px;font-size:1.1rem;">Is Pipe Relining Right For Your Situation?</h4>
+        <p style="color:var(--text-muted);margin-bottom:16px;">Not every damaged pipe can be relined — it depends on pipe diameter, the extent of collapse, access points and pipe material. The only way to know for certain is a CCTV drain inspection. We'll give you an honest assessment and tell you straight whether relining is the right solution or whether replacement is needed.</p>
+        <a href="tel:0425226636" class="btn-primary">📞 Call 0425 226 636 for a Free Assessment</a>
+      </div>
+
+      <h3>Pipe Relining in Melbourne's South East — Areas We Service</h3>
+      <p style="color:var(--text-muted);line-height:1.85;margin-bottom:8px;">We carry out pipe relining assessments and work across all of Melbourne's South East including Ringwood, Bayswater, Ferntree Gully, Glen Waverley, Lilydale, Croydon, Heathmont, Boronia, Wantirna, Mooroolbark, Kilsyth, Belgrave, Tecoma, Upwey, Olinda, Kalorama and all surrounding suburbs.</p>
+
+      <h3>Frequently Asked Questions — Pipe Relining</h3>
+      <div class="faq-list" style="max-width:100%">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">How long does pipe relining last? <span class="arrow">▼</span></button>
+          <div class="faq-answer"><p>Pipe relining products carry a long-term manufacturer warranty. In real-world conditions, properly installed pipe liners typically outlast the original pipe by a significant margin — many installations are expected to last 50+ years.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Can all pipes be relined? <span class="arrow">▼</span></button>
+          <div class="faq-answer"><p>Most pipes 50mm diameter and above can be relined. Pipes that have completely collapsed (not partially) may require replacement. Clay, PVC, cast iron and concrete pipes are all suitable candidates. A CCTV inspection confirms suitability before any commitment is made.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Does pipe relining reduce the pipe diameter? <span class="arrow">▼</span></button>
+          <div class="faq-answer"><p>The liner adds a small thickness to the inside of the pipe — typically reducing internal diameter by 6–8mm. This has no practical impact on flow capacity for residential drain lines and is well within Australian standards for drainage.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">Will tree roots come back after pipe relining? <span class="arrow">▼</span></button>
+          <div class="faq-answer"><p>No. The relined pipe is completely seamless with no joints — which is exactly where roots enter. Roots cannot penetrate the cured resin liner, making relining a permanent solution to tree root intrusion. This is one of its biggest advantages over traditional repair methods.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">How long does the job take? <span class="arrow">▼</span></button>
+          <div class="faq-answer"><p>Most residential pipe relining jobs are completed in one day. The CCTV inspection, hydro jet preparation, liner installation and final inspection are all carried out in a single visit. You'll have a fully restored drain line by end of day.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-box" style="border-color:var(--gold)">
+        <h4>Free Pipe Relining Assessment</h4>
+        <a href="tel:0425226636" class="sidebar-phone">0425 226 636</a>
+        <p>Call Jack for a CCTV inspection and honest assessment of whether relining is right for your situation.</p>
+        <a href="tel:0425226636" class="btn-primary" style="width:100%;justify-content:center;font-size:1rem;">📞 Call Now</a>
+      </div>
+      <div class="sidebar-box">
+        <h4>Pipe Relining Includes</h4>
+        <ul class="sidebar-list">
+          <li><span>✅</span> CCTV pre-inspection</li>
+          <li><span>✅</span> 5000 PSI hydro jet prep</li>
+          <li><span>✅</span> Seamless resin liner</li>
+          <li><span>✅</span> No excavation needed</li>
+          <li><span>✅</span> Long-term warranty</li>
+          <li><span>✅</span> Final CCTV confirmation</li>
+          <li><span>✅</span> Completed in one day</li>
+        </ul>
+      </div>
+      <div class="sidebar-box">
+        <h4>Related Services</h4>
+        <ul class="sidebar-list">
+          <li><span>📷</span><span onclick="showPage('service-cctv')" style="cursor:pointer;color:var(--gold)">CCTV Drain Inspection</span></li>
+          <li><span>💧</span><span onclick="showPage('service-hydrojetting')" style="cursor:pointer;color:var(--gold)">Hydro Jet Cleaning</span></li>
+          <li><span>🔧</span><span onclick="showPage('service-blocked-drains')" style="cursor:pointer;color:var(--gold)">Blocked Drains</span></li>
+          <li><span>🚨</span><span onclick="showPage('service-emergency')" style="cursor:pointer;color:var(--gold)">Emergency Plumbing</span></li>
+        </ul>
+      </div>
+      <div class="sidebar-box">
+        <h4>Typical Cost Guide</h4>
+        <ul class="sidebar-list">
+          <li><span>💰</span> Per metre: $500–$1,500</li>
+          <li><span>💰</span> Typical job: $3k–$8k</li>
+          <li><span>💰</span> vs Replacement: Save $10k+</li>
+          <li><span>📞</span> <span style="color:var(--text-muted)">Call for exact quote</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS PAGE -->
+<div id="page-reviews" class="page">
+  <div class="inner-hero">
+    <span class="eyebrow">Customer Reviews</span>
+    <h1>What Melbourne Customers Say About <span class="gold">Water Serpent Plumbing</span></h1>
+    <p>Real reviews from real customers across Melbourne's South East. Jack personally attends every job — and these reviews reflect that.</p>
+    <div class="inner-ctas">
+      <a href="tel:0425226636" class="btn-primary">📞 Call 0425 226 636</a>
+      <a href="https://g.page/r/water-serpent-plumbing/review" target="_blank" class="btn-secondary">⭐ Leave a Review</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+
+      <!-- Overall rating banner -->
+      <div style="background:linear-gradient(135deg,var(--green) 0%,var(--dark) 100%);border:1px solid var(--border);border-radius:12px;padding:40px;text-align:center;margin-bottom:60px;">
+        <div style="font-size:4rem;margin-bottom:8px;">⭐⭐⭐⭐⭐</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:5rem;color:var(--gold);line-height:1;">5.0</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.2rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:16px;">Google Rating — Water Serpent Plumbing</div>
+        <p style="color:var(--text-muted);max-width:500px;margin:0 auto 24px;">Every review below is from a real customer across Melbourne's South East. We don't ask for reviews unless the job is done properly.</p>
+        <a href="https://g.page/r/water-serpent-plumbing/review" target="_blank" class="btn-primary">⭐ Leave Us a Google Review</a>
+      </div>
+
+
+      <!-- YouTube confidence box -->
+      <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:32px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:60px;">
+        <div style="background:#ff0000;border-radius:10px;width:64px;height:64px;display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;">▶</div>
+        <div style="flex:1;min-width:200px;">
+          <h3 style="margin-bottom:8px;font-size:1.4rem;">Want Even More Confidence? Watch Us Work.</h3>
+          <p style="color:var(--text-muted);margin:0;line-height:1.7;">Don't just take our word for it — watch real blocked drain jobs, live CCTV drain footage and before &amp; after clears on our YouTube channel. See exactly what you're getting before you pick up the phone.</p>
+        </div>
+        <a href="https://www.youtube.com/@waterserpentdrains" target="_blank" class="btn-primary" style="background:#ff0000;white-space:nowrap;flex-shrink:0;">▶ Watch @waterserpentdrains</a>
+      </div>
+      <!-- Review cards -->
+      <div class="section-header">
+        <span class="eyebrow">Verified Google Reviews</span>
+        <h2>Customer <span class="gold">Testimonials</span></h2>
+      </div>
+
+      <div class="testimonials-grid" style="margin-bottom:60px;">
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Great quality finishes with prompt and friendly service. Jack turned up on time, cleared our blocked drain and showed us the CCTV footage so we could see exactly what had caused it. Really impressed with the professionalism."</p>
+          <div class="reviewer">David R. <span class="suburb-tag">— Ringwood</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review — Blocked Drain</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Helped me flush out my storm water drains as I had a leakage causing issues in my garden. Jack was knowledgeable, explained everything clearly and the price was exactly what he quoted. No surprises at all."</p>
+          <div class="reviewer">Michelle T. <span class="suburb-tag">— Bayswater</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review — Stormwater Drain</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Talked us through the options and did excellent work at a good price. We had tree roots in our main sewer line and Jack was the only plumber who actually showed us the problem on camera before quoting. Highly recommend."</p>
+          <div class="reviewer">Sarah K. <span class="suburb-tag">— Ferntree Gully</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review — CCTV Inspection</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"We are so happy with the finished product and how timely it was completed. Called Jack at 7am about an overflowing drain and he was there by 10am. Fixed it completely, cleaned up after himself. Exactly what you want from a tradie."</p>
+          <div class="reviewer">James P. <span class="suburb-tag">— Croydon</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review — Emergency Drain</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Jack cleared a blocked kitchen sink that two other plumbers couldn't fix properly. He used his high pressure jetter and CCTV camera — the problem was grease build-up 8 metres down the line. Previous plumbers never found it. Absolute legend."</p>
+          <div class="reviewer">Karen W. <span class="suburb-tag">— Glen Waverley</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review — Blocked Sink</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Used Water Serpent for a pre-purchase drain inspection before buying our home in Lilydale. Jack found significant root intrusion in the main drain that nobody else had picked up. Saved us from a very expensive surprise. Worth every cent."</p>
+          <div class="reviewer">Tom & Lisa B. <span class="suburb-tag">— Lilydale</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review — Pre-Purchase Inspection</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Had a blocked toilet on a Sunday evening — not ideal. Called Jack and he answered straight away, gave me an honest assessment over the phone and was there within two hours. Fixed it properly, didn't charge an arm and a leg. Will definitely use again."</p>
+          <div class="reviewer">Rachel M. <span class="suburb-tag">— Boronia</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review — Blocked Toilet</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Been using Jack for all our plumbing needs for two years now. He's honest, reliable, turns up when he says he will, and the work is always done right. Rare to find a tradie like this. Highly recommended to anyone in the Ranges area."</p>
+          <div class="reviewer">Craig F. <span class="suburb-tag">— Kalorama</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review — Multiple Services</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Jack came out to do a CCTV inspection on our stormwater drain that kept backing up every time it rained. Found a partially collapsed section under the driveway. Gave us a clear quote and fixed it quickly. Professional from start to finish."</p>
+          <div class="reviewer">Anne-Marie S. <span class="suburb-tag">— Heathmont</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review — Stormwater CCTV</div>
+        </div>
+
+      </div>
+
+      <!-- Why reviews matter section -->
+      <div style="background:var(--section-alt);border:1px solid var(--border);border-radius:12px;padding:48px;margin-bottom:60px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+          <div>
+            <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--gold);margin-bottom:12px;display:block;">Our Promise</span>
+            <h2 style="margin-bottom:16px;">Why We Let Our <span class="gold">Work Speak</span></h2>
+            <p style="color:var(--text-muted);line-height:1.85;margin-bottom:16px;">We never ask for a review unless the job has been done properly and the customer is genuinely happy. Every review you see here reflects a real job done right — no incentives, no pressure, no fake testimonials.</p>
+            <p style="color:var(--text-muted);line-height:1.85;margin-bottom:24px;">Jack's philosophy is simple: turn up on time, diagnose the problem correctly, fix it properly, charge a fair price and leave the place tidy. Do that consistently and the reviews look after themselves.</p>
+            <a href="tel:0425226636" class="btn-primary">📞 Experience It Yourself</a>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div class="why-feature"><span class="why-feature-icon">👤</span><div><h4>Owner on Every Job</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">Jack personally attends every callout — you're never getting an apprentice or subcontractor</p></div></div>
+            <div class="why-feature"><span class="why-feature-icon">📷</span><div><h4>We Show You the Evidence</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">CCTV footage means you see exactly what the problem was and that it's fixed</p></div></div>
+            <div class="why-feature"><span class="why-feature-icon">💰</span><div><h4>Price Agreed Before We Start</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">Upfront quotes every time — the price we quote is the price you pay</p></div></div>
+            <div class="why-feature"><span class="why-feature-icon">🕐</span><div><h4>We Turn Up When We Say</h4><p style="color:var(--text-muted);font-size:0.9rem;margin:0">Reliable, on-time attendance — your time is as valuable as ours</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leave a review CTA -->
+      <div class="cta-section" style="border-radius:12px;margin-bottom:0;">
+        <h2>Had a Great Experience? <span class="gold">Leave a Review</span></h2>
+        <p style="color:var(--text-muted);max-width:560px;margin:0 auto 32px;">Your Google review helps other Melbourne homeowners find a trustworthy plumber — and helps a local small business grow. It takes less than 2 minutes and means the world to us.</p>
+        <div class="cta-btns">
+          <a href="https://g.page/r/water-serpent-plumbing/review" target="_blank" class="btn-primary">⭐ Leave a Google Review</a>
+          <a href="tel:0425226636" class="btn-secondary">📞 Call 0425 226 636</a>
+        </div>
+      </div>
+
     </div>
   </section>
 </div>
@@ -2951,7 +3324,9 @@ function updateSEO(pageId) {
     'service-stormwater': { title: 'Stormwater Drain Cleaning Melbourne | Water Serpent Plumbing', desc: 'Professional stormwater drain clearing and CCTV inspection. Prevent flooding before Melbourne winter. South East Melbourne specialists.' },
     'service-emergency': { title: '24/7 Emergency Plumber Melbourne South East | Water Serpent', desc: 'Emergency drain and plumbing service across Melbourne\'s South East. Jack answers his own phone. Call 0425 226 636 now.' },
     'blog': { title: 'Drain & Plumbing Blog | Melbourne Expert Advice | Water Serpent', desc: 'Expert drain and plumbing guides for Melbourne homeowners. Tips on blocked drains, CCTV inspections, tree roots and more from Jack at Water Serpent Plumbing.' },
-    'contact': { title: 'Contact Water Serpent Plumbing | Call 0425 226 636 | Melbourne SE', desc: 'Contact Jack at Water Serpent Plumbing. Call 0425 226 636 for same-day blocked drain service across Melbourne\'s South East, or send an enquiry online.' }
+    'contact': { title: 'Contact Water Serpent Plumbing | Call 0425 226 636 | Melbourne SE', desc: 'Contact Jack at Water Serpent Plumbing. Call 0425 226 636 for same-day blocked drain service across Melbourne\'s South East, or send an enquiry online.' },
+    'service-pipe-relining': { title: 'Pipe Relining Melbourne South East | No-Dig Drain Repair | Water Serpent', desc: 'Permanent pipe relining across Melbourne South East. No digging, long-term warranty, completed in one day. Cracked pipes, tree roots, leaking joints. Call 0425 226 636.' },
+    'reviews': { title: 'Customer Reviews | Water Serpent Plumbing Melbourne | 5-Star Rated', desc: '5-star Google reviews from real customers across Melbourne\'s South East. Blocked drains, CCTV inspections, emergency plumbing. Read what locals say about Jack at Water Serpent Plumbing.' }
   };
 
   // Check suburb pages
