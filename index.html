@@ -144,14 +144,15 @@
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
-  <link rel="preload" href="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=1500w" as="image" fetchpriority="high">
+  <link rel="preload" href="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=800w fetchpriority="high">
   <!-- Performance optimisation -->
-  <link rel="preload" href="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=1500w" as="image" fetchpriority="high" type="image/png">
+  <link rel="preload" href="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=800w fetchpriority="high" type="image/png">
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.squarespace-cdn.com" crossorigin>
 <!-- Load fonts async to prevent render blocking -->
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap&display=swap" rel="stylesheet"></noscript>
@@ -1045,8 +1046,8 @@
   }
 
   /* ===== HIDDEN pages ===== */
-  .page { display: none; }
-  .page.active { display: block; }
+  .page { position: absolute; left: -9999px; top: 0; width: 1px; height: 1px; overflow: hidden; }
+  .page.active { position: static; left: 0; top: 0; width: 100%; height: auto; overflow: visible; display: block; }
 
   /* Stars */
   .stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 2px; }
@@ -1327,7 +1328,7 @@
 <!-- NAV -->
 <nav role="navigation" aria-label="Main Navigation">
   <a class="nav-logo" onclick="showPage('home')" href="/" aria-label="Water Serpent Plumbing Home">
-    <img src="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=1500w" alt="Water Serpent Plumbing – Blocked Drain Specialists Melbourne" width="50" height="50" onerror="this.style.opacity='0';this.alt=''">
+    <img src="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=150w Serpent Plumbing – Blocked Drain Specialists Melbourne" width="50" height="50" onerror="this.style.opacity='0';this.alt=''">
     <span class="nav-logo-text">Water Serpent<br>Plumbing</span>
   </a>
   <ul class="nav-links" id="nav-links">
@@ -1404,8 +1405,7 @@
       </div>
       <div class="hero-image-wrap">
         <img class="hero-logo-big"
-          src="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=1500w"
-          alt="Water Serpent Plumbing – Dragon logo with wrench and plunger, Melbourne blocked drain specialists" width="400" height="400" loading="eager" fetchpriority="high" decoding="async"
+          src="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=800walt="Water Serpent Plumbing – Dragon logo with wrench and plunger, Melbourne blocked drain specialists" width="400" height="400" loading="eager" fetchpriority="high" decoding="async"
           onerror="this.style.opacity='0.8'">
       </div>
     </div>
@@ -1640,7 +1640,7 @@
           </div>
         </div>
         <div class="why-image-wrap">
-          <img src="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=1500w"
+          <img src="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=1000w"
             alt="Water Serpent Plumbing – Jack, owner and blocked drain expert" width="500" height="400" loading="lazy" style="aspect-ratio:5/4"
             onerror="this.style.opacity='0';this.alt=''">
           <div class="why-stat-box">
@@ -3208,7 +3208,7 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <img src="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=1500w" alt="Water Serpent Plumbing" width="70" height="70" loading="lazy" onerror="this.style.opacity='0';this.alt=''">
+      <img src="https://images.squarespace-cdn.com/content/v1/66ce9e6b83e45b6a5703fb08/a4e1bafd-56d5-40c9-911c-ebe1a6ea3af7/SERP+%281%29.jpg?format=150w Serpent Plumbing" width="70" height="70" loading="lazy" onerror="this.style.opacity='0';this.alt=''">
       <p>Melbourne's South East blocked drain specialists. 20+ years experience. 5000 PSI hydro jetting, CCTV inspections and honest upfront pricing. Jack attends every job personally.</p>
       <div class="social-links">
         <a href="https://www.instagram.com/water_serpent_plumbing/" target="_blank" class="social-link" title="Instagram" aria-label="Water Serpent Plumbing on Instagram">📷</a>
