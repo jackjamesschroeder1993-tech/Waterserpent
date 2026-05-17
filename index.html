@@ -142,8 +142,13 @@
 </script>
   <!-- Security headers -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  /* Fallback fonts while Google Fonts load - prevents FOIT & reduces CLS */
+    @font-face { font-family: 'BarlowFallback'; src: local('Arial'); size-adjust: 98%; ascent-override: 90%; descent-override: 22%; line-gap-override: 0%; }
+    @font-face { font-family: 'BarlowCondFallback'; src: local('Impact'); size-adjust: 86%; ascent-override: 92%; descent-override: 21%; line-gap-override: 0%; }
+    body { font-family: 'Barlow', 'BarlowFallback', Arial, sans-serif; }
+    h1,h2,h3,h4,.nav-logo-text,
+    .btn-primary,.btn-secondary,.section-label,
+    .hero-badge,.trust-badge { font-family: 'Barlow Condensed', 'BarlowCondFallback', Impact, Arial Narrow, sans-serif; }<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
   <link rel="preload" as="image" href="NEW_LOGO.png" fetchpriority="high">
   <!-- Performance optimisation -->
   <link rel="preload" as="image" href="NEW_LOGO.png" fetchpriority="high" type="image/png">
@@ -154,8 +159,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 href="NEW_LOGO.png" fetchpriority="high" type="image/png">
 <!-- Load fonts async to prevent render blocking -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
   /* Fallback fonts while Google Fonts load - prevents invisible text (FOIT) */
   body { font-family: Arial, sans-serif; }
@@ -1328,7 +1333,7 @@ href="NEW_LOGO.png" fetchpriority="high" type="image/png">
 <!-- NAV -->
 <nav role="navigation" aria-label="Main Navigation">
   <a class="nav-logo" onclick="showPage('home')" href="/" aria-label="Water Serpent Plumbing Home">
-    <img src="NEW_LOGO.png" alt="Serpent Plumbing – Blocked Drain Specialists Melbourne" width="50" height="50" onerror="this.style.opacity='0';this.alt=''">
+    <img src="NEW_LOGO.png" loading="lazy" alt="Water Serpent Plumbing – Blocked Drain Specialists Melbourne" width="50" height="50" onerror="this.style.opacity='0';this.alt=''">
     <span class="nav-logo-text">Water Serpent<br>Plumbing</span>
   </a>
   <ul class="nav-links" id="nav-links">
@@ -3239,7 +3244,7 @@ href="NEW_LOGO.png" fetchpriority="high" type="image/png">
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <img src="NEW_LOGO.png" alt="Serpent Plumbing" width="70" height="70" loading="lazy" onerror="this.style.opacity='0';this.alt=''">
+      <img src="NEW_LOGO.png" loading="lazy" alt="Water Serpent Plumbing" width="70" height="70" loading="lazy" onerror="this.style.opacity='0';this.alt=''">
       <p>Melbourne's South East blocked drain specialists. 20+ years experience. 5000 PSI hydro jetting, CCTV inspections and honest upfront pricing. Jack attends every job personally.</p>
       <div class="social-links">
         <a href="https://www.instagram.com/water_serpent_plumbing/" target="_blank" class="social-link" title="Instagram" aria-label="Water Serpent Plumbing on Instagram">📷</a>
