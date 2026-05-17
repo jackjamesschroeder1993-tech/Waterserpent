@@ -477,4 +477,21 @@
     <priority>0.8</priority>
   </url>
 
+
+<!-- ============================================================
+STANDALONE PAGES
+============================================================ -->
+<url>
+<loc>https://www.waterserpent.com.au/blocked-drains.html</loc>
+<lastmod>2026-05-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://www.waterserpent.com.au/blocked-drain-cost-melbourne.html</loc>
+<lastmod>2026-05-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+
 </urlset>
