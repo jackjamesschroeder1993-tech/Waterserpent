@@ -144,15 +144,15 @@
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
   <!-- Performance optimisation -->
-  <link rel="preload" as="image" href="NEW_LOGO.webp" fetchpriority="high" type="image/webp">
+  <link rel="preload" as="image" href="NEW_LOGO_mobile.webp" fetchpriority="high" type="image/webp" media="(max-width:600px)"><link rel="preload" as="image" href="NEW_LOGO.webp" fetchpriority="high" type="image/webp" media="(min-width:601px)">
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Load fonts async to prevent render blocking -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;700&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;700&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;700&display=optional" rel="stylesheet"></noscript>
 <style>
   /* Fallback fonts while Google Fonts load - prevents invisible text (FOIT) */
   body { font-family: Arial, sans-serif; }
@@ -165,7 +165,7 @@
 
   /* ===== CRITICAL ABOVE-FOLD CSS ===== */
   /* These styles are needed before fonts load */
-  #phone-bar { background:#00C4C8; color:#080f0b; padding:8px 20px; text-align:center; }
+  #phone-bar { background:#00C4C8; color:#080f0b; padding:8px 20px; text-align:center; min-height:38px;box-sizing:border-box;}
   nav { background:rgba(8,15,11,0.97); height:64px; }
   .hero { min-height:90vh; background:#080f0b; }
   .btn-primary { background:#00C4C8; color:#080f0b; }
@@ -1402,9 +1402,7 @@
         </div>
       </div>
       <div class="hero-image-wrap">
-        <img class="hero-logo-big"
-          src="NEW_LOGO.webp" alt="Water Serpent Plumbing - Dragon logo with wrench and plunger, Melbourne blocked drain specialists" width="400" height="400" loading="eager" fetchpriority="high" decoding="sync"
-          onerror="this.style.opacity='0.8'">
+        <picture><source srcset="NEW_LOGO_mobile.webp" media="(max-width:600px)" type="image/webp"><source srcset="NEW_LOGO.webp" type="image/webp"><img class="hero-logo-big" src="NEW_LOGO.webp" alt="Water Serpent Plumbing - Dragon logo with wrench and plunger, Melbourne blocked drain specialists" width="400" height="400" loading="eager" fetchpriority="high" decoding="sync" onerror="this.style.opacity='0.8'"></picture>
       </div>
     </div>
   </section>
