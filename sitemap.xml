@@ -4,7 +4,7 @@
   <!-- HOMEPAGE -->
   <url>
     <loc>https://www.waterserpent.com.au/</loc>
-    <lastmod>2025-05-13</lastmod>
+    <lastmod>2025-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- ABOUT -->
   <url>
     <loc>https://www.waterserpent.com.au/#about</loc>
-    <lastmod>2025-05-13</lastmod>
+    <lastmod>2025-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- CONTACT -->
   <url>
     <loc>https://www.waterserpent.com.au/#contact</loc>
-    <lastmod>2025-05-13</lastmod>
+    <lastmod>2025-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -28,470 +28,46 @@
   <!-- REVIEWS -->
   <url>
     <loc>https://www.waterserpent.com.au/#reviews</loc>
-    <lastmod>2025-05-13</lastmod>
+    <lastmod>2025-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ============================================================
-    SERVICE PAGES
-  ============================================================ -->
+  <!-- SERVICE PAGES -->
   <url>
-    <loc>https://www.waterserpent.com.au/#service-blocked-drains</loc>
-    <lastmod>2025-05-13</lastmod>
+    <loc>https://www.waterserpent.com.au/blocked-drains.html</loc>
+    <lastmod>2025-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-cctv</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-hydrojetting</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-blocked-toilets</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-blocked-sinks</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-blocked-basin</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-blocked-shower</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-stormwater</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-pipe-relining</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-smoke-test</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-blocked-septics</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-commercial</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-emergency</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#service-general-plumbing</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
-  <!-- ============================================================
-    SUBURB PAGES
-  ============================================================ -->
   <url>
-    <loc>https://www.waterserpent.com.au/#suburb-ringwood</loc>
-    <lastmod>2025-05-13</lastmod>
+    <loc>https://www.waterserpent.com.au/hydro-jet-drain-cleaning.html</loc>
+    <lastmod>2025-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-ringwood-east</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-ringwood-north</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-bayswater</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-ferntree-gully</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-glen-waverley</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-lilydale</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-kilsyth</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-boronia</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-wantirna</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-wantirna-south</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-croydon</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-croydon-north</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-croydon-hills</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-mooroolbark</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-heathmont</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-rowville</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-knoxfield</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-vermont</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-blackburn</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-nunawading</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-mitcham</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-forest-hill</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-box-hill</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-scoresby</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-mount-evelyn</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-healesville</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-narre-warren</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-kalorama</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-belgrave</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-tecoma</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-upwey</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-ferny-creek</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-olinda</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-warranwood</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-montrose</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-silvan</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-seville</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-coldstream</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-yarra-junction</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-emerald</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-gembrook</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-cockatoo</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-monbulk</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#suburb-launching-place</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
-  <!-- ============================================================
-    BLOG POSTS
-  ============================================================ -->
   <url>
-    <loc>https://www.waterserpent.com.au/#blog-99-plumber</loc>
-    <lastmod>2025-05-13</lastmod>
+    <loc>https://www.waterserpent.com.au/pipe-relining.html</loc>
+    <lastmod>2025-05-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-how-to-unblock</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-drain-smells</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-commercial-drains</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-tree-roots</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-signs-blocked-drain</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-hydro-vs-snake</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-ringwood-drains</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-flushable-wipes</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-cctv-pre-purchase</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-stormwater-winter</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-ferntree-gully</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.waterserpent.com.au/#blog-grease-trap</loc>
-    <lastmod>2025-05-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
+  <url>
+    <loc>https://www.waterserpent.com.au/pipe-locating.html</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-<!-- ============================================================
-STANDALONE PAGES
-============================================================ -->
-<url>
-<loc>https://www.waterserpent.com.au/blocked-drains.html</loc>
-<lastmod>2026-05-17</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://www.waterserpent.com.au/blocked-drain-cost-melbourne.html</loc>
-<lastmod>2026-05-17</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
+  <!-- BLOG / CONTENT PAGES -->
+  <url>
+    <loc>https://www.waterserpent.com.au/blocked-drain-cost-melbourne.html</loc>
+    <lastmod>2025-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
