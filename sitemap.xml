@@ -4,7 +4,7 @@
   <!-- HOMEPAGE -->
   <url>
     <loc>https://www.waterserpent.com.au/</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- ABOUT -->
   <url>
     <loc>https://www.waterserpent.com.au/#about</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- CONTACT -->
   <url>
     <loc>https://www.waterserpent.com.au/#contact</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- REVIEWS -->
   <url>
     <loc>https://www.waterserpent.com.au/#reviews</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -36,28 +36,28 @@
   <!-- SERVICE PAGES -->
   <url>
     <loc>https://www.waterserpent.com.au/blocked-drains.html</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://www.waterserpent.com.au/hydro-jet-drain-cleaning.html</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://www.waterserpent.com.au/pipe-relining.html</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://www.waterserpent.com.au/pipe-locating.html</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -65,7 +65,7 @@
   <!-- BLOG / CONTENT PAGES -->
   <url>
     <loc>https://www.waterserpent.com.au/blocked-drain-cost-melbourne.html</loc>
-    <lastmod>2025-05-18</lastmod>
+    <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
