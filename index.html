@@ -1043,8 +1043,8 @@
   }
 
   /* ===== HIDDEN pages ===== */
-  .page { position: absolute; left: -9999px; top: 0; width: 1px; height: 1px; overflow: hidden; }
-  .page.active { position: static; left: 0; top: 0; width: 100%; height: auto; overflow: visible; display: block; }
+  .page { position: absolute; left: -9999px; top: 0; width: 1px; height: 1px; overflow: hidden; content-visibility: hidden; }
+  .page.active { position: static; left: 0; top: 0; width: 100%; height: auto; overflow: visible; display: block; content-visibility: visible; }
 
   /* Stars */
   .stars { color: #f5a623; font-size: 1.6rem; letter-spacing: 3px; text-shadow: 0 0 8px rgba(245,166,35,0.4); }
