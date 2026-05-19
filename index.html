@@ -130,6 +130,38 @@
       </div>
     </div>
   </section>
+  <!-- HOMEPAGE ENQUIRY FORM -->
+  <section id="enquiry">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Get a Fast Response</span>
+        <h2>Request a <span class="gold">Quote or Callback</span></h2>
+        <p>Fill in the form and Jack will get back to you personally — usually within a few hours. Blocked drain emergency? Call <a href="tel:0425226636" style="color:var(--gold);font-weight:700;">0425 226 636</a> direct.</p>
+      </div>
+      <div class="contact-form" style="max-width:760px;margin:0 auto;">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group" id="fg-name"><label>Your Name <span class="req">*</span></label><input type="text" id="cf-name" placeholder="e.g. Sarah Thompson" autocomplete="name"><span class="form-error-msg">Please enter your name</span></div>
+            <div class="form-group" id="fg-phone"><label>Phone Number <span class="req">*</span></label><input type="tel" id="cf-phone" placeholder="e.g. 0412 345 678" autocomplete="tel"><span class="form-error-msg">Please enter a valid phone number</span></div>
+          </div>
+          <div class="form-group" id="fg-email"><label>Email Address <span class="req">*</span></label><input type="email" id="cf-email" placeholder="e.g. sarah@email.com" autocomplete="email"><span class="form-error-msg">Please enter a valid email address</span></div>
+          <div class="form-row">
+            <div class="form-group" id="fg-suburb"><label>Your Suburb</label><input type="text" id="cf-suburb" placeholder="e.g. Ringwood" autocomplete="address-level2"></div>
+            <div class="form-group" id="fg-service"><label for="cf-service">Service Required</label><select id="cf-service" aria-label="Service Required"><option value="">— Select a service —</option><option value="Blocked Drain">Blocked Drain</option><option value="CCTV Drain Inspection">CCTV Drain Inspection</option><option value="Hydro Jet Cleaning">Hydro Jet Cleaning</option><option value="Blocked Toilet">Blocked Toilet</option><option value="Blocked Sink">Blocked Sink</option><option value="Blocked Basin">Blocked Basin</option><option value="Blocked Shower">Blocked Shower</option><option value="Stormwater Drain">Stormwater Drain</option><option value="Emergency Plumbing">Emergency Plumbing</option><option value="Pre-Purchase Inspection">Pre-Purchase Inspection</option><option value="Pipe Relining">Pipe Relining</option><option value="Other">Other / Not Sure</option></select></div>
+          </div>
+          <div class="form-group" id="fg-urgency"><label for="cf-urgency">How Urgent Is This?</label><select id="cf-urgency" aria-label="Urgency Level"><option value="">— Select urgency —</option><option value="Emergency">🚨 Emergency — happening right now</option><option value="Urgent">⚡ Urgent — needs fixing today</option><option value="Soon">📅 Soon — within the next few days</option><option value="Routine">✅ Routine — no rush</option></select></div>
+          <div class="form-group" id="fg-message"><label>Describe the Problem <span class="req">*</span></label><textarea id="cf-message" placeholder="Tell us what's happening — e.g. 'Kitchen sink draining very slowly, been getting worse over 2 weeks. Single storey home, Ringwood East.'"></textarea><span class="form-error-msg">Please describe the problem so we can help</span></div>
+          <div class="form-check"><input type="checkbox" id="cf-consent" checked><label for="cf-consent">I'm happy for Water Serpent Plumbing to contact me about my enquiry via phone or email.</label></div>
+          <button type="button" class="btn-submit" onclick="submitContactForm()"><span id="submit-btn-text">📩 Send My Enquiry</span></button>
+        </form>
+        <div class="form-success" id="form-success">
+          <div class="success-icon">✅</div>
+          <h4>Message Sent!</h4>
+          <p>Thanks for reaching out. Jack will get back to you personally — usually within a few hours. For urgent issues, don't wait — call <a href="tel:0425226636" style="color:var(--gold)">0425 226 636</a> directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="services">
     <div class="container">
       <div class="section-header">
@@ -259,6 +291,37 @@
           </a>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- CUSTOMER REVIEWS -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">★★★★★ 5.0 Google Rating</span>
+        <h2>What Melbourne Customers <span class="gold">Say</span></h2>
+        <p>Real, verified Google reviews from customers across Melbourne's South East. Jack personally attends every job.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Had a couple of blocked drains, nothing would clear them. Our usual plumber was unavailable so I rang Jack. He was here in a flash and fixed the blockages just as quick — no digging, no tears. Also checked the rest of our drains. Great guy, amazing gear and our new first call plumber."</p>
+          <div class="reviewer">Martin L. <span class="suburb-tag">— Ringwood</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Jack is fast, efficient, and incredibly thorough. He was very communicative throughout and quickly unblocked our overflow relief gully drains with no issues. His approach was professional and the pricing was fair."</p>
+          <div class="reviewer">Long M. <span class="suburb-tag">— Bayswater</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Needed my stormwater drains inspected before a concrete pour. Jack fit me in quickly and even came out at the last minute when the pour time changed. He communicated everything clearly. Highly recommend."</p>
+          <div class="reviewer">Dean O. <span class="suburb-tag">— Ferntree Gully</span></div>
+          <div style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">✅ Verified Google Review</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:32px;"><a href="reviews.html" class="btn-secondary">Read All Reviews →</a></div>
     </div>
   </section>
   <section class="section-alt">
@@ -409,6 +472,27 @@ function toggleFaq(btn) {
   const isOpen = btn.classList.contains('open');
   document.querySelectorAll('.faq-question').forEach(q => { q.classList.remove('open'); q.nextElementSibling.style.maxHeight = '0'; });
   if (!isOpen) { btn.classList.add('open'); answer.style.maxHeight = answer.scrollHeight + 'px'; }
+}
+function submitContactForm(){
+  const name=document.getElementById('cf-name').value.trim();
+  const phone=document.getElementById('cf-phone').value.trim();
+  const email=document.getElementById('cf-email').value.trim();
+  const suburb=document.getElementById('cf-suburb').value.trim();
+  const service=document.getElementById('cf-service').value;
+  const urgency=document.getElementById('cf-urgency').value;
+  const message=document.getElementById('cf-message').value.trim();
+  ['fg-name','fg-phone','fg-email','fg-message'].forEach(id=>document.getElementById(id).classList.remove('has-error'));
+  let valid=true;
+  if(!name){document.getElementById('fg-name').classList.add('has-error');valid=false;}
+  if(!phone||phone.replace(/\D/g,'').length<8){document.getElementById('fg-phone').classList.add('has-error');valid=false;}
+  if(!email||!email.includes('@')||!email.includes('.')){document.getElementById('fg-email').classList.add('has-error');valid=false;}
+  if(!message){document.getElementById('fg-message').classList.add('has-error');valid=false;}
+  if(!valid){const e=document.querySelector('.has-error');if(e)e.scrollIntoView({behavior:'smooth',block:'center'});return;}
+  const subject=encodeURIComponent((urgency==='Emergency'?'🚨 EMERGENCY - ':'')+'Water Serpent Enquiry'+(service?' — '+service:'')+(suburb?' — '+suburb:''));
+  const body=encodeURIComponent('NEW ENQUIRY — WATER SERPENT PLUMBING\n========================================\n\nNAME: '+name+'\nPHONE: '+phone+'\nEMAIL: '+email+(suburb?'\nSUBURB: '+suburb:'')+(service?'\nSERVICE: '+service:'')+(urgency?'\nURGENCY: '+urgency:'')+'\n\nDETAILS:\n'+message+'\n\n========================================\nSent via waterserpent.com.au contact form');
+  document.getElementById('submit-btn-text').textContent='⏳ Opening email...';
+  window.location.href='mailto:waterserpentworks@gmail.com?subject='+subject+'&body='+body;
+  setTimeout(()=>{document.getElementById('contact-form').style.display='none';document.getElementById('form-success').style.display='block';},1200);
 }
 </script>
 </body>
