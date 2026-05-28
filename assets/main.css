@@ -214,6 +214,7 @@ nav {
 .btn-primary { will-change: transform; }
 .hero h1 { margin-bottom: 20px; }
 .hero h1 span { color: var(--gold); display: block; }
+.hero-tagline { font-family: 'Barlow Condensed', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 16px; }
 .hero-sub { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 32px; max-width: 520px; }
 .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
 .btn-primary {
