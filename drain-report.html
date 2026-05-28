@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water Serpent Plumbing – Drain Inspection & Job Report</title>
+<style>
+  :root {
+    --dark:       #0f172a;
+    --teal:       #2f8c85;
+    --teal-light: #3caea4;
+    --amber:      #f59e0b;
+    --red:        #dc2626;
+    --border:     #cbd5e1;
+    --muted:      #64748b;
+    --light:      #f1f5f9;
+    --white:      #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; background: #e2e8f0; color: #1e293b; }
+  .page { width: 210mm; min-height: 297mm; background: var(--white); margin: 20px auto; box-shadow: 0 4px 24px rgba(0,0,0,0.18); }
+  .header { background: var(--dark); color: var(--white); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .header-brand { display: flex; align-items: center; gap: 14px; }
+  .brand-logo { width: 70px; height: 70px; object-fit: contain; flex-shrink: 0; border-radius: 6px; }
+  .brand-name { font-size: 17px; font-weight: 700; letter-spacing: 0.3px; line-height: 1.2; }
+  .brand-sub  { font-size: 11px; color: var(--teal-light); margin-top: 2px; }
+  .header-contact { text-align: right; font-size: 11.5px; line-height: 1.8; }
+  .header-contact strong { color: var(--teal-light); font-size: 13px; }
+  .report-title-bar { background: var(--teal); color: var(--white); text-align: center; padding: 8px; font-size: 14px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+  .body { padding: 18px 22px 22px; }
+  .section { margin-bottom: 16px; }
+  .section-title { background: var(--dark); color: var(--white); padding: 5px 10px; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; border-left: 4px solid var(--teal); margin-bottom: 8px; }
+  .row  { display: flex; gap: 8px; margin-bottom: 7px; }
+  .col  { flex: 1; }
+  .col2 { flex: 2; }
+  .col3 { flex: 3; }
+  .field label { display: block; font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; }
+  .field input[type="text"], .field input[type="date"], .field input[type="time"],
+  .field input[type="tel"], .field input[type="email"], .field select, .field textarea {
+    width: 100%; border: 1px solid var(--border); border-radius: 4px; padding: 5px 8px;
+    font-size: 12.5px; font-family: inherit; background: var(--light); color: #1e293b; transition: border-color 0.15s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--teal); background: var(--white); }
+  .field textarea { resize: vertical; min-height: 48px; }
+  .field select { cursor: pointer; }
+  .meta-bar { display: flex; gap: 8px; background: var(--light); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; margin-bottom: 14px; align-items: flex-end; }
+  .meta-bar .field { flex: 1; }
+  .check-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 10px; padding: 6px 8px; background: var(--light); border: 1px solid var(--border); border-radius: 4px; }
+  .check-grid.col2 { grid-template-columns: repeat(2, 1fr); }
+  .check-item { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 2px 0; }
+  .check-item input[type="checkbox"] { width: 14px; height: 14px; accent-color: var(--teal); flex-shrink: 0; cursor: pointer; }
+  .priority-row { display: flex; gap: 10px; align-items: center; }
+  .priority-opt { display: flex; align-items: center; gap: 5px; font-size: 12px; cursor: pointer; }
+  .priority-opt input { accent-color: var(--teal); }
+  .pill-high { color: var(--red);   font-weight: 700; }
+  .pill-med  { color: var(--amber); font-weight: 700; }
+  .pill-low  { color: var(--teal);  font-weight: 700; }
+  .pipe-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .pipe-table th { background: var(--dark); color: var(--white); padding: 5px 8px; text-align: left; font-size: 10.5px; letter-spacing: 0.5px; }
+  .pipe-table td { border: 1px solid var(--border); padding: 4px 6px; vertical-align: top; }
+  .pipe-table td input[type="text"] { width: 100%; border: none; background: transparent; font-size: 12px; font-family: inherit; padding: 1px 2px; }
+  .pipe-table td input:focus { outline: 1px solid var(--teal); border-radius: 2px; }
+  .pipe-table tr:nth-child(even) td { background: var(--light); }
+  .sig-box { border: 1px solid var(--border); border-radius: 6px; overflow: hidden; max-width: 320px; }
+  .sig-label { background: var(--dark); color: var(--white); font-size: 10px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 4px 10px; }
+  .sig-area { height: 60px; background: var(--light); border-bottom: 1px solid var(--border); }
+  .sig-fields { display: flex; gap: 8px; padding: 6px 8px; }
+  .sig-fields .field { flex: 1; }
+  .footer { background: var(--dark); color: #94a3b8; text-align: center; font-size: 10px; padding: 10px; line-height: 1.7; }
+  .footer span { color: var(--teal-light); }
+  @media print {
+    body { background: white; }
+    .page { margin: 0; box-shadow: none; width: 100%; }
+    .no-print { display: none !important; }
+    .field input, .field select, .field textarea { border: 1px solid #ccc !important; background: white !important; }
+    @page { margin: 0; size: A4; }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print" style="text-align:center;padding:14px 0 4px;display:flex;gap:10px;justify-content:center;align-items:center;">
+  <button onclick="window.print()" style="background:#2f8c85;color:white;border:none;padding:10px 28px;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer;">🖨️ Print / Save as PDF</button>
+  <button onclick="clearForm()" style="background:#0f172a;color:white;border:none;padding:10px 22px;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer;">🗑️ Clear Form</button>
+</div>
+
+<div class="page">
+  <div class="header">
+    <div class="header-brand">
+      <img src="NEW_LOGO.png%20first.jpg" alt="Water Serpent Plumbing Logo" class="brand-logo">
+      <div>
+        <div class="brand-name">Water Serpent Plumbing</div>
+        <div class="brand-sub">Blocked Drain Specialists — Melbourne</div>
+      </div>
+    </div>
+    <div class="header-contact">
+      <strong>📞 0425 226 636</strong><br>
+      waterserpentworks@gmail.com<br>
+      www.waterserpent.com.au
+    </div>
+  </div>
+
+  <div class="report-title-bar">Drain Inspection &amp; Job Report</div>
+
+  <div class="body">
+
+    <div class="meta-bar">
+      <div class="field col"><label>Report No.</label><input type="text" placeholder="e.g. WSP-2026-001"></div>
+      <div class="field col"><label>Date</label><input type="date"></div>
+      <div class="field col"><label>Job Start Time</label><input type="time"></div>
+      <div class="field col"><label>Job End Time</label><input type="time"></div>
+      <div class="field col"><label>Job Status</label>
+        <select>
+          <option>✅ Completed</option><option>⏳ In Progress</option>
+          <option>🔄 Follow-up Required</option><option>❌ Could Not Complete</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- 1. CUSTOMER DETAILS -->
+    <div class="section">
+      <div class="section-title">1. Customer Details</div>
+      <div class="row">
+        <div class="field col2"><label>Customer Name</label><input type="text" placeholder="Full name"></div>
+        <div class="field col"><label>Phone</label><input type="tel" placeholder="04XX XXX XXX"></div>
+        <div class="field col"><label>Email</label><input type="email" placeholder="email@example.com"></div>
+      </div>
+      <div class="row">
+        <div class="field col3"><label>Service Address</label><input type="text" placeholder="Street address"></div>
+        <div class="field col"><label>Suburb</label><input type="text" placeholder="Suburb"></div>
+      </div>
+      <div class="row">
+        <div class="field col"><label>Property Type</label>
+          <select><option>Residential</option><option>Commercial</option><option>Industrial</option><option>Strata / Body Corporate</option><option>Real Estate / Property Manager</option></select>
+        </div>
+        <div class="field col"><label>Access Notes</label><input type="text" placeholder="e.g. Side gate, key code, dog on premises"></div>
+        <div class="field col"><label>Referred By / PO Number</label><input type="text" placeholder="Optional"></div>
+      </div>
+    </div>
+
+    <!-- 2. JOB TYPE -->
+    <div class="section">
+      <div class="section-title">2. Job Type</div>
+      <div class="check-grid">
+        <label class="check-item"><input type="checkbox"> Blocked Drain</label>
+        <label class="check-item"><input type="checkbox"> Blocked Toilet</label>
+        <label class="check-item"><input type="checkbox"> Blocked Sink / Basin</label>
+        <label class="check-item"><input type="checkbox"> Blocked Shower</label>
+        <label class="check-item"><input type="checkbox"> Blocked Stormwater</label>
+        <label class="check-item"><input type="checkbox"> Blocked Sewer</label>
+        <label class="check-item"><input type="checkbox"> CCTV Inspection</label>
+        <label class="check-item"><input type="checkbox"> Hydro Jet Cleaning</label>
+        <label class="check-item"><input type="checkbox"> Pipe Relining</label>
+        <label class="check-item"><input type="checkbox"> Pipe Locating</label>
+        <label class="check-item"><input type="checkbox"> Emergency Call-out</label>
+        <label class="check-item"><input type="checkbox"> General Plumbing</label>
+      </div>
+    </div>
+
+    <!-- 3. INSPECTION FINDINGS -->
+    <div class="section">
+      <div class="section-title">3. Inspection Findings</div>
+      <div class="row">
+        <div class="field col2"><label>Location of Problem</label><input type="text" placeholder="e.g. Main sewer line, laundry waste, rear yard drain"></div>
+        <div class="field col"><label>Pipe Size</label>
+          <select><option>-- Select --</option><option>40mm</option><option>50mm</option><option>65mm</option><option>80mm</option><option>100mm</option><option>150mm</option><option>225mm</option><option>Unknown</option></select>
+        </div>
+        <div class="field col"><label>Pipe Material</label>
+          <select><option>-- Select --</option><option>PVC</option><option>Cast Iron</option><option>Clay / Earthenware</option><option>Concrete</option><option>Copper</option><option>AC (Asbestos Cement)</option><option>Unknown</option></select>
+        </div>
+      </div>
+      <div style="margin-bottom:7px;">
+        <label style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;">Cause of Blockage</label>
+        <div class="check-grid">
+          <label class="check-item"><input type="checkbox"> Tree Roots</label>
+          <label class="check-item"><input type="checkbox"> Grease / Fat Build-up</label>
+          <label class="check-item"><input type="checkbox"> Hair &amp; Soap</label>
+          <label class="check-item"><input type="checkbox"> Foreign Object</label>
+          <label class="check-item"><input type="checkbox"> Wet Wipes / Sanitary</label>
+          <label class="check-item"><input type="checkbox"> Scale / Mineral Build-up</label>
+          <label class="check-item"><input type="checkbox"> Collapsed / Cracked Pipe</label>
+          <label class="check-item"><input type="checkbox"> Offset / Misaligned Joint</label>
+          <label class="check-item"><input type="checkbox"> Sediment / Debris</label>
+          <label class="check-item"><input type="checkbox"> Stormwater Ingress</label>
+          <label class="check-item"><input type="checkbox"> Unknown</label>
+          <label class="check-item"><input type="checkbox"> Other (see notes)</label>
+        </div>
+      </div>
+      <div style="margin-bottom:7px;">
+        <label style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;">CCTV / Camera Findings</label>
+        <div class="check-grid col2">
+          <label class="check-item"><input type="checkbox"> No defects found — pipe clear</label>
+          <label class="check-item"><input type="checkbox"> Root intrusion</label>
+          <label class="check-item"><input type="checkbox"> Pipe cracked / fractured</label>
+          <label class="check-item"><input type="checkbox"> Pipe collapsed / deformed</label>
+          <label class="check-item"><input type="checkbox"> Joint offset / misalignment</label>
+          <label class="check-item"><input type="checkbox"> Corrosion / deterioration</label>
+          <label class="check-item"><input type="checkbox"> Scale / encrustment</label>
+          <label class="check-item"><input type="checkbox"> Incorrect fall / back-grading</label>
+          <label class="check-item"><input type="checkbox"> Infiltration (water ingress)</label>
+          <label class="check-item"><input type="checkbox"> Foreign object lodged</label>
+        </div>
+      </div>
+      <table class="pipe-table">
+        <thead><tr>
+          <th style="width:8%">Location (m)</th><th>Defect / Observation</th>
+          <th style="width:18%">Condition Rating</th><th style="width:18%">Recommended Action</th>
+        </tr></thead>
+        <tbody>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><select style="width:100%;border:none;background:transparent;font-size:12px"><option>-- Select --</option><option>Grade 1 – Good</option><option>Grade 2 – Minor</option><option>Grade 3 – Moderate</option><option>Grade 4 – Severe</option><option>Grade 5 – Critical</option></select></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><select style="width:100%;border:none;background:transparent;font-size:12px"><option>-- Select --</option><option>Grade 1 – Good</option><option>Grade 2 – Minor</option><option>Grade 3 – Moderate</option><option>Grade 4 – Severe</option><option>Grade 5 – Critical</option></select></td><td><input type="text"></td></tr>
+          <tr><td><input type="text"></td><td><input type="text"></td><td><select style="width:100%;border:none;background:transparent;font-size:12px"><option>-- Select --</option><option>Grade 1 – Good</option><option>Grade 2 – Minor</option><option>Grade 3 – Moderate</option><option>Grade 4 – Severe</option><option>Grade 5 – Critical</option></select></td><td><input type="text"></td></tr>
+        </tbody>
+      </table>
+      <div class="row" style="margin-top:8px;">
+        <div class="field col"><label>Inspection Notes</label><textarea placeholder="Detailed findings, sonde locations, depth, observations..."></textarea></div>
+      </div>
+    </div>
+
+    <!-- 4. WORK COMPLETED -->
+    <div class="section">
+      <div class="section-title">4. Work Completed</div>
+      <div style="margin-bottom:7px;">
+        <div class="check-grid">
+          <label class="check-item"><input type="checkbox"> Manual rod clearing</label>
+          <label class="check-item"><input type="checkbox"> Hydro jet cleaning</label>
+          <label class="check-item"><input type="checkbox"> CCTV camera inspection</label>
+          <label class="check-item"><input type="checkbox"> Pipe relining</label>
+          <label class="check-item"><input type="checkbox"> Pipe locating / sonde</label>
+          <label class="check-item"><input type="checkbox"> Drain excavation</label>
+          <label class="check-item"><input type="checkbox"> Pipe repair / replacement</label>
+          <label class="check-item"><input type="checkbox"> Pit / grate cleaning</label>
+          <label class="check-item"><input type="checkbox"> Root cutting</label>
+          <label class="check-item"><input type="checkbox"> Chemical treatment</label>
+          <label class="check-item"><input type="checkbox"> Smoke test</label>
+          <label class="check-item"><input type="checkbox"> Report only / no works</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field col2"><label>Equipment Used</label><input type="text" placeholder="e.g. 5000 PSI hydro jetter, CCTV push camera, electric eel"></div>
+        <div class="field col"><label>Jet Pressure Used</label><input type="text" placeholder="e.g. 5000 PSI"></div>
+      </div>
+      <div class="row">
+        <div class="field col"><label>Materials / Parts Used</label><textarea placeholder="e.g. 100mm PVC junction, rubber repair coupling, reline liner..."></textarea></div>
+        <div class="field col"><label>Work Description</label><textarea placeholder="Describe exactly what was done, where, and the outcome..."></textarea></div>
+      </div>
+    </div>
+
+    <!-- 5. RECOMMENDATIONS -->
+    <div class="section">
+      <div class="section-title">5. Recommendations</div>
+      <div class="row">
+        <div class="field col"><label>Immediate Recommendations</label><textarea placeholder="Any urgent action required — safety, structural, compliance..."></textarea></div>
+        <div class="field col"><label>Future Recommendations</label><textarea placeholder="Preventative maintenance, pipe relining, follow-up inspection..."></textarea></div>
+      </div>
+      <div class="row" style="align-items:center;">
+        <div style="flex:0 0 auto;">
+          <label style="font-size:10px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:6px;">Priority Level</label>
+          <div class="priority-row">
+            <label class="priority-opt pill-high"><input type="radio" name="priority" value="high"> 🔴 High — Act within 24–48 hrs</label>
+            <label class="priority-opt pill-med"><input type="radio" name="priority" value="medium"> 🟡 Medium — Within 1–4 weeks</label>
+            <label class="priority-opt pill-low"><input type="radio" name="priority" value="low"> 🟢 Low — Routine maintenance</label>
+          </div>
+        </div>
+        <div class="field col" style="max-width:220px;"><label>Follow-up Job Date (if booked)</label><input type="date"></div>
+      </div>
+    </div>
+
+    <!-- 6. SIGN-OFF -->
+    <div class="section">
+      <div class="section-title">6. Sign-Off</div>
+      <div class="sig-box">
+        <div class="sig-label">Technician Signature</div>
+        <div class="sig-area"></div>
+        <div class="sig-fields">
+          <div class="field"><label>Name</label><input type="text" placeholder="Jack Schroeder"></div>
+          <div class="field"><label>Date</label><input type="date"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <span>Water Serpent Plumbing – Blocked Drain Specialists Melbourne</span><br>
+    📞 0425 226 636 &nbsp;|&nbsp; ✉ waterserpentworks@gmail.com &nbsp;|&nbsp; 🌐 www.waterserpent.com.au<br>
+    BPC Registered Victorian Plumber &nbsp;|&nbsp; 20+ Years Experience &nbsp;|&nbsp; Same-Day Service Available
+  </div>
+</div>
+
+<script>
+  window.addEventListener('load', () => {
+    const today = new Date().toISOString().split('T')[0];
+    document.querySelectorAll('input[type="date"]').forEach((el, i) => { if (i === 0) el.value = today; });
+  });
+  function clearForm() {
+    if (!confirm('Clear all fields and start a new report?')) return;
+    document.querySelectorAll('input[type="text"],input[type="tel"],input[type="email"],input[type="time"],textarea').forEach(el => el.value = '');
+    document.querySelectorAll('input[type="checkbox"],input[type="radio"]').forEach(el => el.checked = false);
+    document.querySelectorAll('select').forEach(el => el.selectedIndex = 0);
+    const today = new Date().toISOString().split('T')[0];
+    document.querySelectorAll('input[type="date"]').forEach((el, i) => { el.value = i === 0 ? today : ''; });
+  }
+</script>
+</body>
+</html>
