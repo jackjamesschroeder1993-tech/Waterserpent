@@ -176,6 +176,29 @@
       <a href="https://www.youtube.com/@waterserpentdrains" target="_blank" rel="noopener" class="btn-primary" style="white-space:nowrap;background:#ff0000;flex-shrink:0;" aria-label="Watch Water Serpent Plumbing on YouTube">▶ Watch on YouTube</a>
     </div>
   </div>
+  <!-- FEATURED VIDEO (lazy click-to-play facade — iframe only loads on click to protect page speed) -->
+  <div style="padding:32px 24px;">
+    <div class="container" style="max-width:760px;">
+      <div style="text-align:center;margin-bottom:16px;">
+        <span class="eyebrow">Watch a Real Job</span>
+        <h2 style="margin:6px 0 8px;">See What a <span class="gold">Blocked Sewer</span> Really Looks Like</h2>
+        <p style="color:var(--text-muted);">Raw footage from a real Water Serpent job — no staging, no surprises. This is exactly the kind of problem we clear every day across Melbourne's east.</p>
+      </div>
+      <div id="yt-facade" onclick="ytLoad()" role="button" tabindex="0" onkeypress="if(event.key==='Enter'){ytLoad()}" aria-label="Play video: real Water Serpent blocked sewer job" style="position:relative;width:100%;padding-top:56.25%;border-radius:12px;overflow:hidden;cursor:pointer;background:#000 url('https://i.ytimg.com/vi/gwlH_RW2-7w/hqdefault.jpg') center/cover no-repeat;border:1px solid var(--border);">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.25);">
+          <div style="background:#ff0000;width:74px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,0.45);">
+            <span style="color:#fff;font-size:1.6rem;line-height:1;margin-left:4px;">▶</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:14px;">
+        <a href="https://www.youtube.com/watch?v=gwlH_RW2-7w" target="_blank" rel="noopener" class="btn-secondary" aria-label="Watch this job on YouTube">▶ Watch on YouTube</a>
+      </div>
+    </div>
+  </div>
+  <script>
+  function ytLoad(){var f=document.getElementById('yt-facade');if(!f||f.dataset.loaded){return}f.dataset.loaded='1';var i=document.createElement('iframe');i.setAttribute('src','https://www.youtube.com/embed/gwlH_RW2-7w?autoplay=1&start=36&rel=0');i.setAttribute('title','Water Serpent Plumbing — real blocked sewer job');i.setAttribute('frameborder','0');i.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');i.setAttribute('allowfullscreen','');i.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0;';f.innerHTML='';f.appendChild(i)}
+  </script>
   <section id="services">
     <div class="container">
       <div class="section-header">
