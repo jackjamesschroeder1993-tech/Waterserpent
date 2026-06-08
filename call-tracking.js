@@ -1,28 +1,47 @@
-/* Water Serpent Plumbing — site-wide call-tap tracking
-   Fires the Google Ads "Website Call Click" conversion whenever a visitor
-   taps any "Call" (tel:) link, on every page that includes this file.
-   Account AW-16673259231 | Conversion label bjI0COqbp7gcEN_9to4-
-   Loads gtag asynchronously so it never blocks page rendering. */
+/* Water Serpent Plumbing — site-wide call-tap tracking (performance-friendly)
+   Fires the Google Ads "Website Call Click" conversion when a visitor taps any
+   "Call" (tel:) link. The Google tag is loaded only on the visitor's FIRST
+   interaction (scroll / tap / move / key), so it stays out of the page-load
+   critical path and does not affect Core Web Vitals (LCP/TBT).
+   Account AW-16673259231 | Conversion label bjI0COqbp7gcEN_9to4- */
 (function () {
-  // Async-load the Google tag (non-blocking)
-  var s = document.createElement('script');
-  s.async = true;
-  s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16673259231';
-  document.head.appendChild(s);
+  var loaded = false;
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  window.gtag = gtag;
-  gtag('js', new Date());
-  gtag('config', 'AW-16673259231');
+  function loadGtag() {
+    if (loaded) return;
+    loaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { dataLayer.push(arguments); };
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16673259231';
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', 'AW-16673259231');
+  }
 
-  // Count a conversion on every tap of a tel: link
+  // Load the Google tag on the first real user interaction (keeps it off the
+  // initial render path; bots/Lighthouse never interact, so it never loads for them)
+  var firstEvents = ['scroll', 'pointerdown', 'touchstart', 'keydown', 'mousemove'];
+  function onFirstInteraction() {
+    loadGtag();
+    firstEvents.forEach(function (e) {
+      window.removeEventListener(e, onFirstInteraction, { passive: true });
+    });
+  }
+  firstEvents.forEach(function (e) {
+    window.addEventListener(e, onFirstInteraction, { passive: true });
+  });
+
+  // Bind every tel: link so a tap records the conversion (loads the tag first if
+  // it somehow hasn't been; gtag() queues the event in dataLayer until ready)
   function bindTelLinks() {
     document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
-      if (link.dataset.ctBound) return;        // avoid double-binding
+      if (link.dataset.ctBound) return;
       link.dataset.ctBound = '1';
       link.addEventListener('click', function () {
-        gtag('event', 'conversion', {
+        loadGtag();
+        window.gtag('event', 'conversion', {
           'send_to': 'AW-16673259231/bjI0COqbp7gcEN_9to4-'
         });
       });
