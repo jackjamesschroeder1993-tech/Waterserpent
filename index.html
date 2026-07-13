@@ -578,13 +578,22 @@ footer { background: var(--dark); border-top: 1px solid var(--border); padding: 
   window.WS_FORM_LABEL = "6s2ACMD68qEbEN_9to4-";     /* <-- replace */
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", window.WS_ADS_ID);
+  /* Load Google tag after first interaction (or 3.5s) - cuts mobile blocking time */
   if (window.WS_ADS_ID.indexOf("AW-") === 0 && window.WS_ADS_ID !== "AW-CONVERSION_ID") {
-    var ws_s = document.createElement("script");
-    ws_s.async = true;
-    ws_s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.WS_ADS_ID;
-    document.head.appendChild(ws_s);
-    gtag("js", new Date());
-    gtag("config", window.WS_ADS_ID);
+    var wsGtagLoaded = false;
+    var wsLoadGtag = function(){
+      if (wsGtagLoaded) return; wsGtagLoaded = true;
+      var ws_s = document.createElement("script");
+      ws_s.async = true;
+      ws_s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.WS_ADS_ID;
+      document.head.appendChild(ws_s);
+    };
+    ["touchstart","scroll","mousedown","keydown"].forEach(function(ev){
+      window.addEventListener(ev, wsLoadGtag, {once:true, passive:true});
+    });
+    setTimeout(wsLoadGtag, 3500);
   }
 </script>
 <style>
@@ -627,7 +636,7 @@ footer { background: var(--dark); border-top: 1px solid var(--border); padding: 
 </div>
 <nav role="navigation" aria-label="Main Navigation">
 <a class="nav-logo" href="index.html" aria-label="Water Serpent Plumbing Home">
-<img src="NEW_LOGO.webp" loading="lazy" alt="Water Serpent Plumbing – Blocked Drain Specialists Melbourne" width="50" height="50">
+<img src="NEW_LOGO.webp" loading="eager" fetchpriority="high" alt="Water Serpent Plumbing – Blocked Drain Specialists Melbourne" width="50" height="50">
 <span class="nav-logo-text">Water Serpent<br>Plumbing</span>
 </a>
 <ul class="nav-links" id="nav-links">
@@ -1276,7 +1285,7 @@ alert('Sorry, something went wrong sending your enquiry. Please call 0425 226 63
 });
 }
 </script>
-<script src="/call-tracking.js"></script>
+<script src="/call-tracking.js" defer></script>
 <script>
 (function(){
   function ready(label){
