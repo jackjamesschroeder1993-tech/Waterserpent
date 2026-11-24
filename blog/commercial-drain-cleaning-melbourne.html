@@ -207,6 +207,9 @@
     <div>BPC Registered Plumber · <a href="../sitemap.xml">Sitemap</a></div>
   </div>
 </footer>
+<style>#call-sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;background:var(--gold);color:#04231f;text-align:center;padding:14px;font-weight:700;font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;letter-spacing:.5px;box-shadow:0 -2px 12px rgba(0,0,0,.35);text-decoration:none}
+@media(max-width:640px){#call-sticky{display:block}body{padding-bottom:54px}}</style>
+<a href="tel:0425226636" id="call-sticky">📞 Call Jack — 0425 226 636</a>
 <script>
 // Mobile nav toggle is handled inline in nav HTML.
 // FAQ toggle:
@@ -217,5 +220,6 @@ function toggleFaq(btn) {
   if (!isOpen) { btn.classList.add('open'); answer.style.maxHeight = answer.scrollHeight + 'px'; }
 }
 </script>
+<script src="/call-tracking.js"></script>
 </body>
 </html>
