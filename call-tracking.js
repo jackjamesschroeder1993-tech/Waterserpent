@@ -18,6 +18,7 @@
     document.head.appendChild(s);
     gtag('js', new Date());
     gtag('config', 'AW-16673259231');
+    gtag('config', 'G-BLSMJ9E22F');
   }
 
   // Load the Google tag on the first real user interaction (keeps it off the
@@ -44,9 +45,16 @@
         window.gtag('event', 'conversion', {
           'send_to': 'AW-16673259231/bjI0COqbp7gcEN_9to4-'
         });
+        window.gtag('event', 'call_click', { 'send_to': 'G-BLSMJ9E22F', 'page_path': location.pathname });
       });
     });
   }
+
+  // Contact-form enquiries: called from contact.html after a successful send
+  window.wsTrackLead = function () {
+    loadGtag();
+    window.gtag('event', 'generate_lead', { 'send_to': 'G-BLSMJ9E22F', 'method': 'contact_form' });
+  };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', bindTelLinks);
